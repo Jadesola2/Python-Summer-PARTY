@@ -1,6 +1,4 @@
-# Note: pandas and numpy are already imported as pd and np
-# The following tables are loaded as pandas DataFrames with the same names: dim_groups
-# Please print your final result or dataframe
+#A dataframe with the columns: created_date, participant_count,group_id and total_messages was given and I was asked to write a code to give the group with the highest number of participants created in October 2024  
 import pandas as pd
 #convert the data type on the 'created_date' column
 dim_groups['created_date']=pd.to_datetime(dim_groups['created_date'] )
