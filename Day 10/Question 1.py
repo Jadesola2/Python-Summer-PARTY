@@ -8,6 +8,9 @@
 app_ratings=pd.read_csv('Day 10/app_ratings.csv')
 
 
+#cleaning the rating column by removing whitespaces and replacing the commas with a point
 app_ratings['rating']=app_ratings['rating'].str.replace(',','.').str.strip()
+
+#change the data type to numeric and use "errors='coerce'" to handles errors in the type conversion
 app_ratings['rating']=pd.to_numeric(app_ratings['rating'],errors='coerce')
 print(app_ratings)
