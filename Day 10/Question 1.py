@@ -1,1 +1,9 @@
+#There are some data inconsistencies in the 'rating' column, specifically: leading or trailing white space, decimals represented by commas instead of decimal points (eg. 4,2 instead of 4.2), and non-numeric values. Clean up these data issues and convert the column to a numeric data type.
 
+# Note: pandas and numpy are already imported as pd and np
+# The following tables are loaded as pandas DataFrames with the same names: app_ratings
+# Please print your final result or dataframe
+
+app_ratings['rating']=app_ratings['rating'].str.replace(',','.').str.strip()
+app_ratings['rating']=pd.to_numeric(app_ratings['rating'],errors='coerce')
+print(app_ratings)
