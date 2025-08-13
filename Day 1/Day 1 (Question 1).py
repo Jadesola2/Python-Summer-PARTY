@@ -1,3 +1,4 @@
+#What is the maximum number of participants among WhatsApp groups that were created in October 2024? This metric will help us understand the largest group size available.
 #A dataframe with the columns: created_date, participant_count,group_id and total_messages was given and I was asked to write a code to give the group with the highest number of participants created in October 2024  
 import pandas as pd
 #convert the data type on the 'created_date' column
