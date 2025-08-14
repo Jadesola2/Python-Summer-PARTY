@@ -22,3 +22,14 @@ new_df=new_df.assign(ctr=(new_df["clicks"] / new_df["impressions"])*100)
 
 #group by product_category and calculate the average ctr
 new_df = new_df.groupby('product_category')['ctr'].mean()
+
+#create series with products with ctr greater than the mean
+high_performing_categories=new_df2[new_df2 > mean]
+
+#convert the series into a dataframe with the name average_ctr
+high_performing_categories=high_performing_categories.to_frame(name='average_ctr')
+
+#calculate the percentage difference between each product's average ctr and the overall average ctr
+high_performing_categories=high_performing_categories.assign(average_ctr=((high_performing_categories['average_ctr']-mean)/mean)*100)
+
+print(high_performing_categories)
