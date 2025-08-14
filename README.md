@@ -31,11 +31,11 @@ The **Python Summer Party** is a free coding challenge that:
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/python-summer-party.git
+   git clone https://github.com/Jadesola2/Python-Summer-PARTY.git
    ```
 2. Navigate to the desired day's folder:
    ```bash
-   cd python-summer-party/day_01
+   cd Python-Summer-PARTY/Day 1
    ```
 3. Run the Python file:
    ```bash
