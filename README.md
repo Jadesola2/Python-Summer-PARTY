@@ -57,7 +57,5 @@ This is a personal progress tracker, but feel free to fork and work along with m
 
 ---
 
-🎉 **Let’s make this summer count — one Python challenge at a time!** 🎉
-
-Perfect 👍
+🎉 **Let’s make this summer count , one Python challenge at a time!** 🎉
 
