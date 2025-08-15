@@ -1,3 +1,8 @@
+#Between April 1st and June 30th, 2025, what is the average order value for each payment method? This metric will help us assess which payment methods are tied to higher spending levels.
+
+
+
+
 # Note: pandas and numpy are already imported as pd and np
 # The following tables are loaded as pandas DataFrames with the same names: fct_transactions
 # Please print your final result or dataframe
