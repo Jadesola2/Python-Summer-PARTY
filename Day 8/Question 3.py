@@ -5,7 +5,7 @@
 # The following tables are loaded as pandas DataFrames with the same names: fct_transactions
 # Please print your final result or dataframe
 
-#convert the transaction_date column elements into datetime objects
+#convert the transaction_date column elements into datetime objects and filter it to include transaction that occurred between April 1st and June 30th, 2025
 fct_transactions['transaction_date']=pd.to_datetime(fct_transactions['transaction_date'])
 start_date='2025-04-01'
 end_date='2025-06-30'
