@@ -25,6 +25,8 @@ count=payment.value_counts()
 
 #calculate the number of switched customers
 no_of_switched_customers=count['credit_card']*0.2
+
+#calculate the increase in order_value
 increase_in_order_value=average_order_value['credit_card']*0.15
 total=total_sales['credit_card']
 print((no_of_switched_customers*increase_in_order_value))
