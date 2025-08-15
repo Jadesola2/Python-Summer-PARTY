@@ -10,6 +10,8 @@ fct_transactions['transaction_date']=pd.to_datetime(fct_transactions['transactio
 start_date='2025-04-01'
 end_date='2025-06-30'
 fct_transactions=fct_transactions[(fct_transactions['transaction_date']>=start_date)&(fct_transactions['transaction_date']<=end_date)]
+
+#get the average order_value for each payment_method
 average_order_value=fct_transactions.groupby('payment_method')['order_value'].mean()
 total_sales=fct_transactions.groupby('payment_method')['order_value'].sum()
 payment=fct_transactions['payment_method']
