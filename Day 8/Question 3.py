@@ -1,3 +1,5 @@
+#Between April 1st and June 30th, 2025, what would be the predicted sales lift if a 'pay over time' option were introduced? Assume that 20% of credit card transactions during this period would switch to using the 'pay over time' option. And that for these switched transactions, the order value is expected to increase by 15% based on the average order value of all credit card transactions in that same time period.
+
 
 # Note: pandas and numpy are already imported as pd and np
 # The following tables are loaded as pandas DataFrames with the same names: fct_transactions
