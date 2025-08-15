@@ -13,9 +13,17 @@ fct_transactions=fct_transactions[(fct_transactions['transaction_date']>=start_d
 
 #get the average order_value for each payment_method
 average_order_value=fct_transactions.groupby('payment_method')['order_value'].mean()
+
+#get the total order_value for each payment_method
 total_sales=fct_transactions.groupby('payment_method')['order_value'].sum()
+
+#crop the payment_method column
 payment=fct_transactions['payment_method']
+
+#get the count for each payment method
 count=payment.value_counts()
+
+#calculate the number of switched customers
 no_of_switched_customers=count['credit_card']*0.2
 increase_in_order_value=average_order_value['credit_card']*0.15
 total=total_sales['credit_card']
