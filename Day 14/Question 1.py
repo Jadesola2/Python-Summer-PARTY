@@ -17,6 +17,6 @@ merged_df=pd.merge(filtered_fct_transactions,dim_customers, how='left',on='custo
 #rename the column
 merged_df=merged_df.rename(columns={'transaction_value':'transaction_count'})
 
-#get the sum of transaction_count for 'is_loyalty_member'==True
+#get the sum of transaction_count for loyalty program members and non-members
 merged_df=merged_df.groupby('is_loyalty_member')['transaction_count'].sum()
 print(merged_df)
